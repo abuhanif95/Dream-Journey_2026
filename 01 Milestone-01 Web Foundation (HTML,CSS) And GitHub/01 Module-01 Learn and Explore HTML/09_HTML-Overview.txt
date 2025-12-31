@@ -1,0 +1,166 @@
+# HTML Learning Summary
+
+Date: January 1, 2026
+Topic: HTML Basic Syntax and Common Tags
+
+## 1. What is HTML?
+
+HTML (HyperText Markup Language) is the standard language for creating web pages.
+
+Example:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My First Day</title>
+</head>
+<body>
+    Welcome to my website!
+</body>
+</html>
+
+## 2. Text Formatting Tags
+
+Common Tags:
+- <p> - Paragraph
+- <strong> - Important text
+- <b> - Bold text
+- <em> - Emphasized text
+- <i> - Italic text
+- <h1> to <h6> - Headings
+- <small> - Small text
+- <br> - Line break
+
+Example:
+<p>This is a <strong>paragraph</strong> with <em>formatted</em> text.</p>
+<h1>Main Heading</h1>
+<h2>Subheading</h2>
+<p>Line 1<br>Line 2</p>
+
+## 3. Inline vs Block Elements
+
+Block Elements:
+- Start on a new line and take full width
+- Examples: <p>, <div>, <h1>-<h6>, <ul>, <ol>, <li>
+
+Inline Elements:
+- Do not start on a new line, take only necessary width
+- Examples: <strong>, <em>, <i>, <b>, <a>, <img>, <span>
+
+Example:
+<div>This is a block element.</div>
+<span>This is an inline element.</span>
+
+## 4. Lists
+
+Unordered List (<ul>):
+Creates a bulleted list.
+
+Example:
+<ul>
+    <li>Item 1</li>
+    <li>Item 2</li>
+    <li>Item 3</li>
+</ul>
+
+Ordered List (<ol>):
+Creates a numbered list.
+
+Example:
+<ol>
+    <li>First item</li>
+    <li>Second item</li>
+    <li>Third item</li>
+</ol>
+
+## 5. Container Tags
+
+- <div> - Generic block container
+- <span> - Generic inline container
+
+Example:
+<div>
+    <h1>Section Title</h1>
+    <p>This is a <span style="color: red;">Red</span> text.</p>
+</div>
+
+## 6. Links (Anchor Tag)
+
+<a> tag creates hyperlinks.
+
+Attributes:
+- href - Specifies the URL
+- target - Where to open the link (_blank for new tab)
+
+Example:
+<a href="https://www.google.com" target="_blank">Visit Google</a>
+<a href="about.html">About Page</a>
+
+## 7. Images
+
+<img> tag displays images.
+
+Attributes:
+- src - Image source
+- alt - Alternative text
+- height / width - Image dimensions
+
+Example:
+<!-- Online Image -->
+<img src="https://example.com/image.jpg" alt="Example Image" height="200">
+
+<!-- Local Image -->
+<img src="images/photo.jpg" alt="Local Photo">
+
+## 8. Forms
+
+Common Input Types:
+- text - Text input
+- email - Email input
+- password - Password input
+- number - Number input
+- date - Date picker
+- color - Color picker
+- file - File upload
+- submit - Submit button
+- reset - Reset form
+
+Example Form:
+<form>
+    <label>Name: <input type="text" placeholder="Enter name"></label><br>
+    <label>Email: <input type="email" placeholder="Enter email"></label><br>
+    <label>Password: <input type="password"></label><br>
+    <input type="submit" value="Submit">
+    <input type="reset" value="Clear">
+</form>
+
+## 9. Page Structure
+
+Basic HTML Structure:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon.ico">
+    <title>Page Title</title>
+</head>
+<body>
+    <header>Website Header</header>
+    <main>Main Content</main>
+    <footer>Copyright © 2026</footer>
+</body>
+</html>
+
+## 10. Other Useful Tags
+
+- <button> - Clickable button
+- <!-- Comment --> - HTML comment
+- <meta> - Metadata about the document
+- <link> - Links to external resources
+
+Example:
+<button>Click Me</button>
+<!-- This is a comment and won't be displayed -->
+
+Summary: Today I learned the fundamentals of HTML including text formatting with tags, links, images, forms, lists, and page structure.
