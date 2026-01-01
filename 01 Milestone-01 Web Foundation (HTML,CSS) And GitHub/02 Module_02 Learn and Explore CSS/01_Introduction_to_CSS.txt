@@ -1,0 +1,64 @@
+# Introduction to CSS
+
+## 1. What is CSS?
+
+CSS (Cascading Style Sheets) is a Stylesheet language used to describe the presentation of HTML documents. 
+While HTML provides the structure and content, CSS controls the visual appearance.
+**Analogy:**
+- **HTML** = The skeleton of a house (structure)
+- **CSS** = The paint, furniture, and decorations (appearance)
+
+## THREE WAYS TO APPLY CSS TO HTML:
+
+### 1. INLINE CSS
+Definition: Styles applied directly to HTML elements using the style attribute.
+Implementation: Add style attribute to any HTML tag.
+
+Example:
+<p style="color: red; font-size: 16px;">This is red text.</p>
+<div style="background: yellow; padding: 10px;">Yellow box</div>
+
+
+### 2. INTERNAL CSS (EMBEDDED CSS)
+Definition: CSS code placed inside <style> tags in the HTML document head.
+
+Implementation: Add <style> tags in the <head> section.
+
+Example Structure:
+<html>
+<head>
+    <style>
+        p { color: blue; }
+        h1 { text-align: center; }
+    </style>
+</head>
+<body>
+    <h1>Title</h1>
+    <p>Styled paragraph</p>
+</body>
+</html>
+
+
+### 3. EXTERNAL CSS
+Definition: CSS code in separate .css file linked to HTML.
+
+Implementation: Create .css file and link with <link> tag.
+
+File Structure:
+project-folder/
+
+├── index.html
+└── css/
+    └── style.css
+
+HTML Implementation:
+<head>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+CSS File (style.css):
+body {
+    font-family: Arial;
+    margin: 0;
+    padding: 0;
+}
