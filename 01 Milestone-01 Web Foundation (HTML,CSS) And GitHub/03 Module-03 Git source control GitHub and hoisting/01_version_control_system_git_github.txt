@@ -1,0 +1,118 @@
+# VERSION CONTROL SYSTEM, GIT & GITHUB
+
+## 1. WHAT IS VERSION CONTROL SYSTEM (VCS)?
+A Version Control System (VCS) is a software tool that helps developers track and manage changes to source code over time. 
+It's like a "time machine" for your code.
+
+### Key Features of VCS:
+- Track every change made to files
+- Revert to any previous version
+- Compare changes over time
+- Work on multiple features simultaneously
+- Collaborate with other developers
+- Backup and restore code
+
+### Types of VCS:
+1. LOCAL VCS: Track changes on your own computer
+2. CENTRALIZED VCS: Single server stores all versions
+3. DISTRIBUTED VCS: Every developer has complete copy of repository
+
+### Why Use VCS?
+- Backup and restore capability
+- Track who changed what and when
+- Experiment safely without breaking working code
+- Collaborate efficiently in teams
+- Maintain project history
+- Deploy different versions
+
+
+## 2. GIT - DISTRIBUTED VERSION CONTROL SYSTEM
+Git is a FREE, open-source, distributed version control system created by Linus Torvalds in 2005 (creator of Linux).
+
+### What is Git?
+- Tool installed on your LOCAL computer
+- Manages version control locally
+- Tracks changes in source code
+- Creates snapshots (commits) of your project
+- Works offline (no internet needed)
+- Command-line tool with GUI options available
+
+### Key Git Concepts:
+1. REPOSITORY: Project folder tracked by Git (.git folder)
+2. COMMIT: Snapshot of changes with message
+3. BRANCH: Independent line of development
+4. MERGE: Combine changes from different branches
+5. CLONE: Copy repository to local machine
+6. PUSH: Send local changes to remote repository
+7. PULL: Get changes from remote repository
+
+### Basic Git Commands:
+git init          # Start new repository
+git add .         # Stage all changes
+git commit -m "message"  # Save snapshot
+git status        # Check current state
+git log           # View commit history
+git branch        # List/create branches
+git checkout      # Switch branches
+git merge         # Combine branches
+git clone         # Copy remote repo locally
+git push          # Send to remote
+git pull          # Get from remote
+
+### Git Workflow:
+1. Make changes to files
+2. Stage changes (git add)
+3. Commit changes (git commit)
+4. Push to remote (git push)
+
+
+## 3. GITHUB - CLOUD HOSTING PLATFORM
+GitHub is a cloud-based hosting service for Git repositories with additional collaboration features.
+
+### What is GitHub?
+- Website (github.com) owned by Microsoft
+- Hosts Git repositories in the cloud
+- Provides web-based interface
+- Adds collaboration features
+- Requires internet connection
+- Free for public repositories
+
+### GitHub Features:
+1. REPOSITORY HOSTING: Store code in cloud
+2. COLLABORATION TOOLS: Issues, Projects, Discussions
+3. PULL REQUESTS: Code review workflow
+4. ACTIONS: CI/CD automation
+5. PAGES: Free static website hosting
+6. SECURITY SCANNING: Vulnerability detection
+7. COMMUNITY: Open source projects
+
+### GitHub vs GitLab vs Bitbucket:
+- GitHub: Most popular, Microsoft-owned
+- GitLab: More DevOps features, self-hostable
+- Bitbucket: Atlassian product, good Jira integration
+
+
+
+## 4. GIT vs GITHUB - KEY DIFFERENCES
+
+### Git (Local Tool):
+- Software you INSTALL on computer
+- Works OFFLINE
+- Manages version control
+- Command-line interface
+- Free and open-source
+- Created by Linus Torvalds
+- You run it locally
+
+### GitHub (Cloud Service):
+- Website you VISIT
+- Requires INTERNET
+- Hosts repositories
+- Web-based interface
+- Free/paid plans
+- Owned by Microsoft
+- You use it online
+
+### Analogy:
+Git = Word Processing Software (like Microsoft Word)
+GitHub = Google Docs (cloud storage + collaboration)

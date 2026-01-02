@@ -1,0 +1,39 @@
+GIT BASIC COMMANDS GUIDE
+
+1. git init
+Purpose: Initialize a new Git repository
+Usage: Creates a .git folder in current directory
+Example: git init
+Location: Run in your project folder
+Result: Starts tracking changes in this folder
+
+2. git add
+Purpose: Stage changes for commit
+Usage: Add files to staging area
+Examples:
+  git add filename.txt      # Add specific file
+  git add .                 # Add all files
+  git add *.html           # Add all HTML files
+  git add folder/          # Add specific folder
+
+3. git commit
+Purpose: Save staged changes with message
+Usage: Create a snapshot of your changes
+Examples:
+  git commit -m "Add login page"
+  git commit -m "Fix header bug"
+  git commit -m "Update README file"
+
+BASIC WORKFLOW:
+1. git init                    # Start repository
+2. Make changes to files       # Edit your code
+3. git add .                   # Stage changes
+4. git commit -m "message"     # Save changes
+
+QUICK NOTES:
+- Always write clear commit messages
+- Commit often, small changes
+- Use git status to check state
+- .git folder is hidden by default
+
+DONE: first Git workflow!

@@ -1,0 +1,17 @@
+THREE COMMANDS TO PUSH CHANGES:
+
+1. git add .
+   Stages all changed files
+
+2. git commit -m "Your message"
+   Saves changes with description
+
+3. git push origin main
+   Uploads to GitHub
+
+Example:
+git add .
+git commit -m "Add new feature"
+git push origin main
+
+That's it!

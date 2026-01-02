@@ -1,0 +1,57 @@
+GIT & GITHUB LEARNING OVERVIEW
+
+WHAT I LEARNED TODAY:
+
+1. VERSION CONTROL BASICS
+   - VCS = Time machine for code
+   - Git = Local version control tool
+   - GitHub = Cloud hosting platform
+   - Key difference: Git (local), GitHub (cloud)
+
+2. GITHUB REPOSITORY CREATION
+   - Create account on github.com
+   - Click "+" → New repository
+   - Choose name, description, license
+   - Public = free, visible to all
+
+3. ESSENTIAL GIT COMMANDS
+   - git init = Start tracking folder
+   - git add = Stage changes for commit
+   - git commit = Save snapshot with message
+   - git push = Send to GitHub
+
+4. VS CODE INTEGRATION
+   - Use VS Code terminal for Git
+   - Configure name/email globally
+   - Connect local repo to GitHub
+   - Basic workflow in terminal
+
+5. PUSHING CHANGES (3 COMMANDS)
+   1. git add .          (Stage)
+   2. git commit -m "msg" (Save)
+   3. git push origin main (Upload)
+
+6. WORKFLOW SUMMARY
+   Local: git init → git add → git commit
+   GitHub: Create repo → Connect → git push
+
+7. COMMON BEGINNER ISSUES
+   - Git not installed
+   - Wrong repository URL
+   - Forgot to commit before push
+   - Merge conflicts
+
+KEY TAKEAWAYS:
+- Git manages versions locally
+- GitHub stores code in cloud
+- Always commit with clear messages
+- Three commands to push changes
+- VS Code terminal simplifies workflow
+
+NEXT STEPS:
+- Practice git add/commit/push daily
+- Explore GitHub interface
+- Learn branching (git branch)
+- Try GitHub Pages for free hosting
+
+COMPLETE: Git & GitHub fundamentals learned.

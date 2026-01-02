@@ -1,0 +1,20 @@
+# GITHUB REPOSITORY CREATION & EXPLORATION GUIDE
+
+## STEP 1: CREATE GITHUB ACCOUNT
+1. Go to github.com
+2. Click "Sign up"
+3. Enter email, password, username
+4. Verify email
+5. Complete setup
+
+## STEP 2: CREATE NEW REPOSITORY
+1. Click "+" icon (top-right)
+2. Select "New repository"
+3. Fill details:
+   - Repository name: my-first-repo
+   - Description: My first GitHub repository
+   - Public/Private: Choose Public (free)
+   - Initialize with README: CHECK ✓
+   - Add .gitignore: Optional
+   - License: MIT License recommended
+4. Click "Create repository"

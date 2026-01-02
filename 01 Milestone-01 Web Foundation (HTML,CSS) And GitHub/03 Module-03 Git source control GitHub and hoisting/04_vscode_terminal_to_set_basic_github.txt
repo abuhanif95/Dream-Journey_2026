@@ -1,0 +1,19 @@
+VS CODE GITHUB SETUP
+
+1. Open VS Code terminal
+2. Configure Git:
+   git config --global user.name "Your Name"
+   git config --global user.email "email@example.com"
+
+3. Initialize Git:
+   git init
+
+4. Connect to GitHub:
+   git remote add origin https://github.com/username/repo.git
+
+5. Basic workflow:
+   git add .
+   git commit -m "message"
+   git push origin main
+
+Done.
