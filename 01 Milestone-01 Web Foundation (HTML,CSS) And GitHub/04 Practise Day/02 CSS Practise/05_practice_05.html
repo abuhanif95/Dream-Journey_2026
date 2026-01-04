@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Practice Task 05</title>
+    <style>
+      section {
+        height: 100vh;
+        width: 100%;
+      }
+      div {
+        display: inline-block;
+        margin: 10px;
+      }
+
+      p {
+        font-size: 20px;
+        font-weight: bold;
+      }
+
+      #img01 {
+        height: 500px;
+        width: 300px;
+        box-shadow: 3px 3px 15px 5px rgb(88, 87, 87);
+        border: 2px solid rgb(151, 151, 151);
+        border-end-start-radius: 20px;
+        border-end-end-radius: 20px;
+      }
+
+      #div02 #img02 {
+        background-image: url(coder.jpg);
+        background-position: center;
+        background-size: cover;
+        border: 2px solid rgb(151, 151, 151);
+        height: 500px;
+        width: 300px;
+        border-end-start-radius: 20px;
+        border-end-end-radius: 20px;
+        margin: 0;
+        box-shadow: 3px 3px 15px 5px rgb(88, 87, 87);
+      }
+
+      #div01,
+      #div02 {
+        text-align: center;
+        border: 2px solid rgb(151, 151, 151);
+        border-radius: 25px;
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <div id="div01">
+        <p>Favorite Food</p>
+        <img id="img01" src="../01 HTML Practise/Biriyani.jpg" alt="Biriyani" />
+      </div>
+
+      <div id="div02">
+        <p>Favorite Hobby</p>
+        <div id="img02"></div>
+      </div>
+    </section>
+  </body>
+</html>
