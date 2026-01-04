@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Table</title>
+    <link rel="stylesheet" href="CSS/07_Navigation.css" />
+    <style>
+      table {
+        border-collapse: collapse;
+      }
+      th,
+      td {
+        border: 1px solid;
+        padding: 10px 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="02_Explore_HTML5.html">Blog</a></li>
+          <li><a href="06_Center-Flex.html">Center</a></li>
+          <li><a href="05_CSS-Flex_basic.html">Flex</a></li>
+          <li><a href="04_HTML_Table.html">Table</a></li>
+          <li><a href="03_HTML_Form.html">Form</a></li>
+          <li><a href="07_Navigation.html">Navigation</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h2>Friends</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>No.</th>
+            <th>Fist Name</th>
+            <th>Last Name</th>
+            <th>Age</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td>01</td>
+            <td>Arafat</td>
+            <td>Hossen</td>
+            <td>24</td>
+          </tr>
+          <tr>
+            <td>02</td>
+            <td>Pares</td>
+            <td>Mahmud</td>
+            <td>22</td>
+          </tr>
+          <tr>
+            <td>03</td>
+            <td>Asiful</td>
+            <td>Islam</td>
+            <td>23</td>
+          </tr>
+        </tbody>
+
+        <tfoot>
+          <td colspan="3">Total Friends : 03</td>
+          <td></td>
+        </tfoot>
+      </table>
+    </main>
+  </body>
+</html>

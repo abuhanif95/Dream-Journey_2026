@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Form</title>
+    <link rel="stylesheet" href="CSS/07_Navigation.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="02_Explore_HTML5.html">Blog</a></li>
+          <li><a href="06_Center-Flex.html">Center</a></li>
+          <li><a href="05_CSS-Flex_basic.html">Flex</a></li>
+          <li><a href="04_HTML_Table.html">Table</a></li>
+          <li><a href="03_HTML_Form.html">Form</a></li>
+          <li><a href="07_Navigation.html">Navigation</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section>
+        <h2>Registration Form</h2>
+        <form>
+          <label for="name">Your Name: </label>
+          <input type="text" id="name" name="name" />
+          <br />
+          <br />
+
+          <label for="email">Your Email: </label>
+          <input type="email" name="email" id="email" />
+          <br />
+          <br />
+
+          <fieldset>
+            <legend>Gender :</legend>
+
+            <input type="radio" name="gender" id="men" />
+            <label for="men">Men</label>&nbsp; &nbsp;
+
+            <input type="radio" name="gender" id="women" />
+            <label for="women">Women</label>&nbsp; &nbsp;
+
+            <input type="radio" name="gender" id="other" />
+            <label for="other">Others</label>&nbsp; &nbsp;
+          </fieldset>
+          <fieldset>
+            <legend>Skills :</legend>
+            <input type="checkbox" name="skill" id="html" />
+            <label for="html">HTML</label>&nbsp; &nbsp;
+
+            <input type="checkbox" name="skill" id="css" />
+            <label for="css">CSS</label>&nbsp; &nbsp;
+
+            <input type="checkbox" name="skill" id="js" />
+            <label for="js">JavaScript</label>
+          </fieldset>
+          <fieldset>
+            <legend>Give Feedback :</legend>
+            <textarea
+              name="text"
+              id="text"
+              placeholder="Write here....."
+              cols="50"
+              rows="10"
+            ></textarea>
+          </fieldset>
+          <br />
+
+          <input type="submit" value="Submit" /> &nbsp;
+          <input type="reset" value="Reset" />
+        </form>
+      </section>
+    </main>
+
+    <footer></footer>
+  </body>
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Flex Layout</title>
+    <link rel="stylesheet" href="CSS/07_Navigation.css" />
+    <style>
+      .container {
+        display: flex;
+      }
+      .container div {
+        border: 2px solid tomato;
+        height: 100px;
+        width: 200px;
+        font-size: 2em;
+      }
+
+      .box-container {
+        display: flex;
+        gap: 50px;
+      }
+
+      .box {
+        height: 150px;
+        width: 150px;
+        font-size: 3em;
+        border: 2px solid slateblue;
+      }
+
+      .user-container {
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .user {
+        border: 2px solid black;
+        height: 150px;
+        width: 150px;
+        font-size: 2em;
+        background-color: aquamarine;
+      }
+
+      .card-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="02_Explore_HTML5.html">Blog</a></li>
+          <li><a href="06_Center-Flex.html">Center</a></li>
+          <li><a href="05_CSS-Flex_basic.html">Flex</a></li>
+          <li><a href="04_HTML_Table.html">Table</a></li>
+          <li><a href="03_HTML_Form.html">Form</a></li>
+          <li><a href="07_Navigation.html">Navigation</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="container">
+      <!-- div*6{$} -->
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+      <div>4</div>
+      <div>5</div>
+      <div>6</div>
+    </div>
+
+    <div class="box-container">
+      <!-- .box{$}*6 -->
+      <div class="box">1</div>
+      <div class="box">2</div>
+      <div class="box">3</div>
+      <div class="box">4</div>
+      <div class="box">5</div>
+      <div class="box">6</div>
+    </div>
+
+    <div class="user-container">
+      <!-- .user{user-$}*3 -->
+      <div class="user">user-1</div>
+      <div class="user">user-2</div>
+      <div class="user">user-3</div>
+    </div>
+
+    <div class="card-container">
+      <div class="user">user-1</div>
+      <div class="user">user-2</div>
+      <div class="user">user-3</div>
+      <div class="user">user-4</div>
+      <div class="user">user-5</div>
+      <div class="user">user-6</div>
+      <div class="user">user-7</div>
+      <div class="user">user-8</div>
+      <div class="user">user-9</div>
+      <div class="user">user-10</div>
+      <div class="user">user-11</div>
+      <div class="user">user-12</div>
+      <div class="user">user-13</div>
+      <div class="user">user-14</div>
+      <div class="user">user-15</div>
+      <div class="user">user-16</div>
+    </div>
+  </body>
+</html>
