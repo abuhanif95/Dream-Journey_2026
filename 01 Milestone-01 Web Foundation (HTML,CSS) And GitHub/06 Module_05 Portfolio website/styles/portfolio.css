@@ -1,0 +1,53 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Shared style */
+.color-orange {
+  color: rgb(254, 90, 30);
+}
+
+.btn {
+  background-color: rgb(254, 90, 30);
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 16px 35px;
+  border: none;
+  border-radius: 7px;
+}
+
+header {
+  background-color: #fff8f3;
+  padding-top: 50px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  width: 75%;
+  max-width: 1150px;
+  margin: 0 auto;
+  align-items: center;
+}
+
+.logo h2 {
+  font-size: 45px;
+  font-weight: bold;
+}
+
+nav .menu {
+  display: flex;
+  list-style: none;
+  gap: 50px;
+  align-items: center;
+}
+
+nav .menu li a {
+  text-decoration: none;
+  color: black;
+  font-size: 17px;
+  font-weight: 500;
+}
