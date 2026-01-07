@@ -73,9 +73,10 @@ nav .menu-list {
   gap: 20px;
   justify-content: space-between;
   background-color: rgb(177, 255, 252);
-  margin: 20px 160px;
+  margin: 20px 160px 50px;
   padding: 0px 0px 30px 0px;
   border-radius: 10px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.34);
 }
 
 .hero-section .left-hero {
@@ -97,4 +98,235 @@ nav .menu-list {
   font-weight: 700;
   color: rgb(73, 73, 73);
   margin: 15px 0 20px;
+}
+
+/* pillar section */
+.pillars-section .container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  justify-content: space-between;
+  margin: 0 160px 50px;
+}
+
+.pillars-section .pillar-section-title {
+  font-size: 33px;
+  font-weight: 700;
+}
+
+.pillars-section .pillar-cards {
+  display: flex;
+  margin: 20px auto;
+  margin-top: 0;
+  gap: 25px;
+}
+
+.pillars-section .pillar-card {
+  border: 1px solid rgba(97, 97, 97, 0.346);
+  border-radius: 8px;
+  background-color: rgb(255, 255, 255);
+  padding: 12px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+.pillar-card h2 {
+  font-size: 22px;
+  font-weight: 600;
+  margin: 6px 0;
+  color: rgb(46, 46, 46);
+}
+
+.pillar-card p {
+  font-size: 16px;
+  font-weight: 500;
+  color: rgb(87, 87, 87);
+  margin: 0px 0px 8px;
+}
+
+/* Vision section */
+.vision-section .container {
+  display: flex;
+  flex-direction: column;
+  margin: 0 160px 60px;
+}
+
+.vision-section .vision-section-title {
+  font-size: 33px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.vision-section .vision-section-description {
+  font-size: 18px;
+  font-weight: 500;
+  color: rgb(38, 38, 38);
+}
+
+.vision-section .vision-cards {
+  display: flex;
+  gap: 35px;
+  margin: 20px auto 35px;
+}
+
+.vision-section .vision-card {
+  border-radius: 8px;
+  background-color: rgb(237, 236, 236);
+  padding: 15px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+.vision-card h2 {
+  font-size: 22px;
+  font-weight: 600;
+  margin: 6px 0;
+  color: rgb(46, 46, 46);
+}
+
+.vision-card p {
+  font-size: 16px;
+  font-weight: 500;
+  color: rgb(87, 87, 87);
+  margin: 0px 0px 8px;
+  margin-bottom: 15px;
+}
+
+#vision-card-1 {
+  background-color: rgba(158, 223, 248, 0.475);
+}
+
+#vision-btn-1 {
+  background-color: #1e8fd6;
+  border: none;
+}
+
+#vision-card-2 {
+  background-color: rgba(163, 255, 180, 0.556);
+}
+
+#vision-btn-2 {
+  background-color: #048a69;
+  border: none;
+}
+
+#vision-card-3 {
+  background-color: rgba(248, 233, 158, 0.522);
+}
+
+#vision-btn-3 {
+  background-color: #cb8a08;
+  border: none;
+}
+
+.vision-section .vision-quote {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid rgba(163, 163, 163, 0.346);
+  padding: 15px;
+  border-radius: 10px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+.vision-quote p {
+  font-size: 17px;
+  line-height: 20px;
+  color: rgb(73, 73, 73);
+  margin-bottom: 10px;
+}
+
+.vision-quote h3 {
+  font-size: 23px;
+  color: rgb(46, 45, 45);
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.vision-quote h4 {
+  font-size: 17px;
+  color: rgb(0, 0, 0);
+  font-weight: 500;
+}
+
+/* Recent News Section */
+.recent-news-section .container {
+  display: flex;
+  flex-direction: column;
+  margin: 0 160px 50px;
+}
+
+.recent-news-section .recent-news-header {
+  margin-bottom: 14px;
+}
+
+.recent-news-section h2 {
+  font-size: 35px;
+  font-weight: 600;
+  color: rgb(47, 47, 47);
+  margin-bottom: 8px;
+}
+
+.recent-news-section p {
+  color: rgb(93, 93, 93);
+  font-size: 17px;
+}
+
+.recent-news-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.recent-news-cards .recent-news-card {
+  display: flex;
+  gap: 50px;
+  justify-content: space-between;
+  padding: 20px 30px;
+  margin-top: 20px;
+  background-color: white;
+  border: 1px solid rgba(151, 150, 150, 0.346);
+  border-radius: 15px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+.recent-news-card .projectImg {
+  height: 350px;
+  border-radius: 10px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.recent-news-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 15px;
+}
+
+.recent-news-info h2 {
+  font-size: 28px;
+  font-weight: 600;
+  color: rgb(46, 46, 46);
+}
+
+.recent-news-info img {
+  width: 120px;
+  height: auto;
+}
+
+.recent-news-info .date-time-section {
+  display: flex;
+  gap: 15px;
+  color: rgb(102, 102, 102);
+  font-size: 17px;
+}
+
+.recent-news-info p {
+  font-size: 19px;
+  font-weight: 500;
+  color: rgb(116, 116, 116);
+}
+
+.recent-news-info .btn-2 {
+  width: 160px;
+  text-align: center;
+  margin-top: 5px;
 }
