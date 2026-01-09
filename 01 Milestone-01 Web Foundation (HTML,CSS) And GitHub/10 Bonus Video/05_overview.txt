@@ -1,0 +1,34 @@
+# DAILY LEARNING SUMMARY - CSS Positioning, Pseudo-classes & Pseudo-elements
+
+Date: 10 January 2026
+Topic: Advanced CSS Selectors and Positioning
+
+## WHAT I LEARNED TODAY:
+
+### 1. CSS PSEUDO-CLASSES:
+- **:hover**: Applied to change styling when elements are hovered over
+- **:focus**: Used for styling form inputs when they receive focus
+- **:visited**: Styled visited links differently from unvisited ones
+- **:first-child**: Selected and styled the first child element
+- **:last-child**: Selected and styled the last child element
+- **:nth-child()**: Used patterns (like 2n) to style alternating elements
+
+### 2. CSS POSITIONING PROPERTIES:
+- **Static**: Default positioning (follows normal document flow)
+- **Relative**: Positioned relative to its normal position
+- **Absolute**: Positioned relative to nearest positioned ancestor
+- **Fixed**: Positioned relative to viewport (stays fixed during scrolling)
+- **Sticky**: Hybrid between relative and fixed positioning
+
+### 3. Z-INDEX:
+- Learned to control stacking order of positioned elements
+- Higher z-index values bring elements to the front
+- Only works on positioned elements (non-static)
+
+### 4. PSEUDO-ELEMENTS:
+- **::before**: Inserted content before element's actual content
+- **::after**: Inserted content after element's actual content
+- **::first-letter**: Styled the first letter of paragraphs differently
+- **::first-line**: Applied styles to the first line of text
+- **::selection**: Customized text selection colors
+- **::placeholder**: Styled placeholder text in form inputs

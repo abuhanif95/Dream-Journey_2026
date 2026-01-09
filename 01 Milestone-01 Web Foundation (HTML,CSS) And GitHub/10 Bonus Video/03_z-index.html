@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Z Index</title>
+    <style>
+      .container {
+        border: 2px solid red;
+        position: relative;
+        height: 100vh;
+        width: 100%;
+        background-color: beige;
+      }
+      .container2 {
+        background-color: aquamarine;
+        height: 5000px;
+      }
+      div {
+        border: 2px solid black;
+        font-size: 20px;
+        font-weight: bold;
+      }
+
+      .box1 {
+        background-color: blanchedalmond;
+        height: 200px;
+        width: 200px;
+        margin: 10px;
+        display: inline-block;
+        position: relative;
+        top: 20px;
+        left: 20px;
+      }
+      .box2 {
+        background-color: aqua;
+        height: 200px;
+        width: 200px;
+        margin: 10px;
+        display: inline-block;
+        position: absolute;
+        z-index: 45;
+        top: 70px;
+        left: 70px;
+      }
+      .box3 {
+        background-color: yellow;
+        height: 200px;
+        width: 200px;
+        margin: 10px;
+        display: inline-block;
+        position: sticky;
+        top: 100px;
+        left: 150px;
+        z-index: 56;
+      }
+      .box4 {
+        background-color: pink;
+        height: 200px;
+        width: 200px;
+        margin: 10px;
+        display: inline-block;
+        position: fixed;
+        z-index: 65;
+      }
+    </style>
+  </head>
+  <body>
+    <h3>Z index/h3>
+
+    <div class="container">
+      <div class="box1">Box 01</div>
+      <div class="box2">Box 02</div>
+      <div class="box3">Box 03</div>
+      <div class="box4">Box 04</div>
+    </div>
+
+    <div class="container2"></div>
+  </body>
+</html>
