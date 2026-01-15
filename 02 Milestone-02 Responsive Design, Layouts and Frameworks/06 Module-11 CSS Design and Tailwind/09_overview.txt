@@ -1,0 +1,85 @@
+TAILWIND CSS LEARNING OVERVIEW
+
+1. TAILWIND CSS INTRODUCTION (02_tailwind-intro.html)
+   - Setup using CDN: <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+   - Basic utility classes: text-pink-500 for text coloring
+   - Utility-first approach: Directly styling elements with classes
+
+2. TYPOGRAPHY, BACKGROUND, TEXT & BORDER (03_tailwind_typograpy_background.html)
+   - Typography:
+     * Font sizes: text-7xl, text-5xl
+     * Text decoration: underline
+     * Font weight: font-bold
+     * Text alignment: text-center
+   
+   - Backgrounds:
+     * Solid colors: bg-red-900, bg-green-200
+     * Gradients: bg-linear-to-bl from-violet-500 to-fuchsia-500
+   
+   - Text colors: Via color palette classes
+
+3. SPACING AND BOX MODEL (04_tailwind_spacing_box-model.html)
+   - Container styling:
+     * Width constraints: max-w-7xl
+     * Centering: mx-auto
+     * Borders: border-2
+   
+   - Spacing utilities:
+     * Margin: mx-4 (horizontal margin)
+     * Padding: p-4 (all sides padding)
+   
+   - Text colors: text-cyan-700
+
+4. FLEX LAYOUT (05_tailwind_flex-layout.html)
+   - Responsive design with breakpoints:
+     * Mobile-first: bg-red-300
+     * Medium screens: md:bg-green-500
+     * Large screens: lg:bg-yellow-500
+   
+   - Flexbox utilities:
+     * Enabling flex: lg:flex (flex on large screens only)
+     * Flex justification: justify-between
+     * Box sizing: w-96 (width 24rem), h-32 (height 8rem)
+   
+   - Borders: border-4, border-red-900
+
+5. GRID LAYOUT (06_tailwind_grid-layout.html)
+   - Responsive grid columns:
+     * Mobile: grid-cols-1 (1 column)
+     * Medium: md:grid-cols-2 (2 columns)
+     * Large: lg:grid-cols-3 (3 columns)
+     * Extra large: xl:grid-cols-4 (4 columns)
+   
+   - Grid utilities:
+     * Column spanning: col-span-2, xl:col-span-4, lg:col-span-3
+     * Gap control: gap-4 (1rem gap)
+     * Grid container: grid class
+
+6. PRACTICAL EXAMPLE: SIMPLE CARD (07_simple-card.html)
+   - Card component with responsive grid: grid-cols-1 md:grid-cols-2 lg:grid-cols-3
+   - Card styling:
+     * Fixed width: w-[300px] (custom width with brackets syntax)
+     * Borders: border, border-gray-400
+     * Border radius: rounded-lg
+     * Padding: p-2.5
+   
+   - Image styling: rounded-lg for rounded corners
+   - Typography in cards:
+     * Font size: text-[21px] (custom size)
+     * Font weight: font-medium
+     * Spacing: py-3 (padding top/bottom)
+     * Text alignment: text-center
+   
+   - Button styling:
+     * Background: bg-blue-400
+     * Padding: px-4 (horizontal), py-2 (vertical)
+     * Border radius: rounded-lg
+     * Text color: text-white
+     * Centering: mx-auto
+   
+   - Margin: mb-2 (margin bottom)
+
+7. INITIAL SETUP (tailwind.init.css)
+   - Basic Tailwind import: @import "tailwindcss"
+   - Foundation file for local Tailwind setup
+

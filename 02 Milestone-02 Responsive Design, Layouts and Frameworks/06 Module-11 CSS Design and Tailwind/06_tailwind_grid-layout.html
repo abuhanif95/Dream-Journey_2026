@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tailwind Grid Layout</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body>
+    <!-- grid section -->
+    <section
+      class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4"
+    >
+      <div class="bg-pink-300 text-2xl">box-1</div>
+      <div class="bg-pink-300 text-2xl">box-2</div>
+      <div class="bg-pink-300 text-2xl">box-3</div>
+      <div class="xl:col-span-4 bg-pink-300 text-2xl">box-4</div>
+      <div class="col-span-2 bg-pink-300 text-2xl">box-5</div>
+      <div class="bg-pink-300 text-2xl">box-6</div>
+      <div class="bg-pink-300 text-2xl">box-7</div>
+      <div class="lg:col-span-3 bg-pink-300 text-2xl">box-8</div>
+      <div class="bg-pink-300 text-2xl">box-9</div>
+      <div class="bg-pink-300 text-2xl">box-10</div>
+      <div class="bg-pink-300 text-2xl">box-11</div>
+      <div class="bg-pink-300 text-2xl">box-12</div>
+    </section>
+  </body>
+</html>
