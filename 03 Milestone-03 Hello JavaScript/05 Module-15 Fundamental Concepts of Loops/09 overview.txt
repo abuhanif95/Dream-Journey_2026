@@ -1,0 +1,25 @@
+JavaScript Loops & Control 
+
+1. WHILE LOOPS
+   - Basic while loop syntax
+   - Loop variable initialization, condition checking, and incrementation
+   - Printing sequences and accumulating sums
+
+2. FOR LOOPS
+   - Standard for loop: for (initialization; condition; increment)
+   - Looping forward and in reverse
+   - Using step values (e.g., i += 2 for even/odd sequences)
+
+3. CONDITIONAL LOGIC INSIDE LOOPS
+   - Filtering even/odd numbers using modulo (%)
+   - Finding numbers divisible by 3, 5, or both
+   - Accumulating totals with conditions
+
+4. LOOP CONTROL STATEMENTS
+   - break: exit the loop prematurely
+   - continue: skip the current iteration and continue to the next
+
+5. DO-WHILE LOOPS
+   - Syntax: do { ... } while (condition)
+   - Ensures the loop body runs at least once
+
