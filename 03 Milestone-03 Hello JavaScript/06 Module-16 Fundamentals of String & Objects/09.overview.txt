@@ -1,0 +1,66 @@
+JavaScript Learning Overview - Complete Summary
+================================================
+
+1. DATA TYPES & VARIABLES
+   - Primitive Types: Strings, Numbers, Booleans, Undefined
+   - String Creation: "text", 'text', `text`, new String("text")
+   - Arrays are mutable (can change elements)
+   - Strings are immutable (cannot change characters directly)
+
+2. STRING METHODS
+   - .length: Get string length
+   - .toLowerCase() / .toUpperCase(): Case conversion
+   - .trim(): Remove whitespace
+   - .slice(start, end): Extract substring
+   - .split(separator): Convert string to array
+   - .join(separator): Convert array to string
+   - .concat(): Join strings
+   - .includes(): Check if string contains substring
+
+3. STRING COMPARISON TECHNIQUES
+   - Use .toLowerCase() for case-insensitive comparison
+   - Use .trim() to ignore whitespace differences
+   - Example: subject.toLowerCase() === book.toLowerCase()
+
+4. STRING REVERSAL METHODS
+   Three ways to reverse a string:
+   a) For...of loop: Build reverse string manually
+   b) For loop: Traditional iteration
+   c) One-liner: sentence.split("").reverse().join('')
+
+5. OBJECTS IN JAVASCRIPT
+   - Non-primitive/composite data type
+   - Store key-value pairs
+   - Syntax: const obj = {key: "value", key2: 123}
+   - Can contain: strings, numbers, arrays, nested objects
+
+6. ACCESSING OBJECT PROPERTIES
+   Two methods:
+   a) Dot notation: person.name
+   b) Bracket notation: person["age"]
+   - Bracket notation is required for:
+     * Properties with spaces: person["fav places"]
+     * Dynamic property names: person[keyName]
+
+7. OBJECT MANIPULATION
+   - Modify: person.age = 23
+   - Delete: delete university.class
+   - Object.keys(obj): Get all keys as array
+   - Object.values(obj): Get all values as array
+
+8. ITERATING THROUGH OBJECTS
+   - For...in loop: for (const prop in mobile)
+   - Using Object.keys(): for (const key of keys)
+
+9. OBJECT CREATION METHODS
+   Three approaches:
+   a) Literal: const pen = {brand: 'econo'}
+   b) Constructor: const pencil = new Object()
+   c) Object.create(): const rubber = Object.create({})
+
+10. NESTED DATA STRUCTURES
+    - Objects within objects
+    - Arrays within objects
+    - Access nested properties: university.unique.result.merit
+    - Modify nested arrays: university.events[1] = "16 Dec"
+
