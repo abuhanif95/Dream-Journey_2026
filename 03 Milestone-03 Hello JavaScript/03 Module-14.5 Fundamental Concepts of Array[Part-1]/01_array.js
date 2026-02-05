@@ -4,7 +4,7 @@
 // const num4 = 243;
 
 // const numbers = 123454656778;
-// {}, (), []
+// {}, (), [] = Brackets
 
 const numbers = [12, 22, 45, 65];
 const friends = ["Sabiha", "Hanif", "Tonika"];
