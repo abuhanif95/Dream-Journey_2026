@@ -1,3 +1,4 @@
+
 const numbers = [12, 64, 34, 65, 87, 23];
 console.log(numbers);
 

@@ -5,7 +5,7 @@ if (number < 10) {
 console.log("Something new is cooking");
 
 // =========> While Loop <==============
-let num = 0;
+let num = 0;  // loop variable
 while (num < 5) {
   console.log("loop", num);
   num = num + 1;

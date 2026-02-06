@@ -1,6 +1,6 @@
 // let num = 1;
 // let sum = 0;
-// while (num <= 10) {
+// while (num <= 10) { // focus on the condition
 //   console.log(num);
 //   sum = sum + num;
 //   console.log("Sum : ", sum);
@@ -13,11 +13,18 @@
 //   num++;
 // }
 
-
 let num = 1;
 let sum = 0;
+
 while (num <= 10) {
-  if(num%2 == 0){
+  sum = sum + num;
+  num++;
+}
+console.log("Sum:", sum);
+
+num = 1;
+while (num <= 10) {
+  if (num % 2 == 0) {
     console.log(num);
   }
   num++;
