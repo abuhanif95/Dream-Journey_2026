@@ -1,0 +1,117 @@
+DOM Manipulation in JavaScript - Learning Overview
+===================================================
+
+1. DOM SELECTION METHODS
+------------------------
+• getElementById() - Select single element by ID
+  Example: document.getElementById("food-title")
+
+• getElementsByClassName() - Select elements by class name (returns HTMLCollection)
+  Example: document.getElementsByClassName("foreign")
+
+• getElementsByTagName() - Select elements by tag name (returns HTMLCollection)
+  Example: document.getElementsByTagName("h1")
+
+• querySelectorAll() - Select elements using CSS selectors (returns NodeList)
+  Example: document.querySelectorAll('#old-dhaka p span')
+
+
+2. ACCESSING AND MODIFYING CONTENT
+-----------------------------------
+• innerText - Get or set visible text content
+  Example: element.innerText = "New Text"
+
+• innerHTML - Get or set HTML content (including tags)
+  Example: element.innerHTML = "<h1>New Heading</h1>"
+
+
+3. STYLING ELEMENTS
+-------------------
+• Inline Styles - Direct CSS property manipulation
+  element.style.color = "blue"
+  element.style.backgroundColor = "lightgreen"
+  element.style.borderRadius = "20px"
+  element.style.padding = "10px"
+  element.style.marginLeft = "10px"
+  element.style.textAlign = "center"
+
+
+4. CSS CLASS MANIPULATION
+-------------------------
+• classList.add() - Add one or more classes
+  Example: element.classList.add("bg-red", "bold", "big")
+
+• classList.remove() - Remove a class
+  Example: element.classList.remove("bg-red")
+
+• classList.contains() - Check if class exists
+  Example: element.classList.contains("bold")
+
+
+5. WORKING WITH ATTRIBUTES
+--------------------------
+• getAttribute() - Get attribute value
+  Example: element.getAttribute("id")
+  Example: element.getAttribute("class")
+
+• setAttribute() - Set or update attribute
+  Example: element.setAttribute('title', 'Tooltip text')
+
+
+6. TRAVERSING THE DOM (Parent/Child Navigation)
+------------------------------------------------
+• childNodes - Get all child nodes (including text nodes)
+  Example: const children = element.childNodes
+
+• parentNode - Navigate to parent
+  Example: const parent = element.parentNode
+
+• Chaining navigation
+  Example: element.parentNode.parentNode.parentNode
+
+
+7. CREATING AND ADDING ELEMENTS
+-------------------------------
+Method 1: Using createElement()
+  const newLi = document.createElement("li");
+  newLi.innerText = "New Item";
+  const parent = document.getElementById("list");
+  parent.appendChild(newLi);
+
+Method 2: Using innerHTML (easier for multiple elements)
+  const section = document.createElement('section');
+  section.innerHTML = `
+    <h1>Title</h1>
+    <ul>
+      <li>Item 1</li>
+      <li>Item 2</li>
+    </ul>
+  `;
+  parent.appendChild(section);
+
+
+8. IMPORTANT DIFFERENCES LEARNED
+--------------------------------
+• HTMLCollection vs NodeList: HTMLCollection is live, NodeList is static
+• innerText vs innerHTML: innerText for text only, innerHTML for HTML content
+• getElementById vs querySelector: ID selector is faster, querySelector more flexible
+
+
+9. COMMON PATTERNS USED TODAY
+-----------------------------
+• Looping through collections with for...of
+  for (const element of collection) { ... }
+
+• Applying styles to multiple elements
+• Building DOM structures programmatically
+• Navigating up and down the DOM tree
+
+
+10. PRACTICE EXAMPLES CREATED
+-----------------------------
+• Changed text content of elements
+• Applied multiple styles to sections
+• Added/removed CSS classes
+• Created new sections with content
+• Navigated through parent nodes
+• Added new list items dynamically
