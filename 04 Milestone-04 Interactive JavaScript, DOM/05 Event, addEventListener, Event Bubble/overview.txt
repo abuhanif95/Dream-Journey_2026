@@ -1,0 +1,173 @@
+# JavaScript DOM Events - Learning Overview
+
+## Today's Learning Journey: DOM Events Mastery
+
+### 1. What are DOM Events?
+Events are actions or occurrences that happen in the browser, which JavaScript can "listen" to and respond to. Examples include clicks, key presses, mouse movements, and form submissions.
+
+---
+
+### 2. Different Ways to Handle Events
+
+#### Option 01: Inline HTML Event Handler
+<html>
+<button onclick="console.log(7)">Click me</button>
+
+- Directly in HTML attribute
+- Simple but not recommended for complex applications
+
+#### Option 02: Call Function from HTML
+<html>
+<button onclick="makeYellow()">Make Yellow</button>
+
+<script>
+function makeYellow() {
+  document.body.style.backgroundColor = "yellow";
+}
+</script>
+
+#### Option 03: Using onclick Property
+<script>
+const btnMakeBlue = document.getElementById("btn-make-blue");
+btnMakeBlue.onclick = function() {
+  document.body.style.background = "blue";
+};
+</script>
+
+#### Option 04: Using addEventListener() (Recommended)
+<script>
+document.getElementById("btn-make-green")
+  .addEventListener("click", function() {
+    document.body.style.backgroundColor = "green";
+  });
+</script>
+
+---
+
+### 3. Manipulating Text Content with Events
+
+<script>
+// Update heading text
+document.getElementById("btn-update-title").addEventListener("click", function() {
+  document.getElementById("title-text").innerText = "Updated page title text";
+});
+
+// Get input value and display it
+document.getElementById("btn-update").addEventListener("click", function() {
+  const name = document.getElementById('input-name').value;
+  document.getElementById('name').innerText = name;
+});
+</script>
+
+---
+
+### 4. Building a Comment Box - Dynamic Content Creation
+
+Key Steps:
+1. Get the comment text from textarea
+2. Create new paragraph element
+3. Add CSS class to new element
+4. Set the comment text
+5. Append to parent container
+6. Clear the textarea
+
+<script>
+document.getElementById("btn-post-comment").addEventListener("click", function() {
+  const newComment = document.getElementById('comment-text-box').value;
+  const commentContainer = document.getElementById('comment-container');
+  
+  const commentElement = document.createElement('p');
+  commentElement.classList.add('comment');
+  commentElement.innerText = newComment;
+  
+  commentContainer.appendChild(commentElement);
+  document.getElementById('comment-text-box').value = '';
+});
+</script>
+
+---
+
+### 5. Github-Style Delete Confirmation
+
+<script>
+document.getElementById('input-delete').addEventListener('keyup', function(event) {
+  const deleteBtn = document.getElementById('btn-delete');
+  
+  if(event.target.value === 'delete') {
+    deleteBtn.removeAttribute('disabled');
+    document.getElementById('secret-info').style.display = 'none';
+  } else {
+    deleteBtn.setAttribute('disabled', true);
+  }
+});
+</script>
+
+---
+
+### 6. Different Event Types Explored
+
+| Event Type | Description | Example |
+|------------|-------------|---------|
+| click | Mouse click | element.addEventListener('click', handler) |
+| mouseenter | Mouse enters element | element.addEventListener('mouseenter', handler) |
+| mousemove | Mouse moves over element | element.addEventListener('mousemove', handler) |
+| focus | Input field gains focus | input.addEventListener('focus', handler) |
+| blur | Input field loses focus | input.addEventListener('blur', handler) |
+| keydown | Key is pressed down | input.addEventListener('keydown', handler) |
+| keyup | Key is released | input.addEventListener('keyup', handler) |
+
+---
+
+### 7. Event Bubbling and Propagation
+
+Concept: When an event occurs on an element, it first runs the handlers on that element, then on its parent, then all the way up to the document.
+
+Visual Hierarchy:
+body (red border) -> section (green) -> ol (purple) -> li (blue)
+
+Stopping Propagation:
+<script>
+document.getElementById("item-2").addEventListener("click", function(event) {
+  // Stops event from bubbling to parent elements
+  event.stopPropagation();
+  
+  // Stops propagation AND prevents other handlers on same element
+  event.stopImmediatePropagation();
+});
+</script>
+
+---
+
+### 8. Event Delegation - A Powerful Pattern
+
+Problem: Newly added elements don't have event listeners attached to them.
+
+Solution: Attach event listener to parent element and use event bubbling!
+
+<script>
+// BEFORE (doesn't work for new items)
+const items = document.getElementsByClassName('item');
+for(const item of items) {
+  item.addEventListener('click', function(event) {
+    event.target.remove(); // Only works for existing items
+  });
+}
+
+// AFTER (Event Delegation - works for all items, even new ones!)
+document.getElementById("item-list").addEventListener("click", function(event) {
+  event.target.remove(); // 'event.target' is the clicked element
+});
+
+// Add new item dynamically
+document.getElementById("btn-add-item").addEventListener("click", function() {
+  const li = document.createElement("li");
+  li.classList.add("item");
+  li.innerText = "Brand New Item Added";
+  document.getElementById("item-list").appendChild(li);
+});
+</script>
+
+Benefits of Event Delegation:
+- Works for dynamically added elements
+- Better performance (single listener vs multiple listeners)
+- Cleaner code
