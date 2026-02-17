@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tailwind Recap and Daisy UI</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style>
+      @theme {
+        --color-clifford: #da373d;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 class="text-3xl font-bold py-5 text-center underline text-clifford">
+      Hello world
+    </h1>
+
+    <div class="text-center">
+      <button
+        class="px-6 py-2 rounded-md text-white font-medium bg-amber-500 cursor-pointer hover:bg-amber-400 active:scale-95 transition-all duration-200"
+      >
+        Click Me
+      </button>
+
+      <button class="btn">
+        Daisy UI
+      </button>
+    </div>
+  </body>
+</html>

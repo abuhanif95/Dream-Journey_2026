@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Daisy UI colors, theme and components</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5/themes.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <style>
+      @theme {
+        --color-clifford: #da373d;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 class="text-3xl font-bold py-5 text-center text-clifford">
+      Daisy UI Colors, theme and components
+    </h1>
+
+    <div class="text-center bg-primary/20">
+      <button class="btn btn-primary rounded-full w-64">Click Me</button>
+      <button class="btn btn-error btn-lg">Error!</button>
+      <button class="btn btn-secondary btn-xl">Secondary</button>
+      <button class="btn btn-neutral btn-outline">Neutral</button>
+      <button class="btn btn-warning btn-sm">Warning</button>
+      <button class="btn btn-accent btn-soft">Accent</button>
+    </div>
+    <div class="dropdown">
+      <div tabindex="0" role="button" class="btn m-1">Click</div>
+      <ul
+        tabindex="-1"
+        class="dropdown-content menu bg-base-100 rounded-box z-1 w-52 p-2 shadow-sm"
+      >
+        <li><a>Item 1</a></li>
+        <li><a>Item 2</a></li>
+      </ul>
+    </div>
+  </body>
+</html>
