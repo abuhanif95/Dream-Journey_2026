@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="main-div">
+      <h1 id="mainTitle">Hello world</h1>
+      <ul>
+        <li class="list-item">Apple</li>
+        <li class="list-item">Orange</li>
+        <li class="list-item">Date</li>
+      </ul>
+    </div>
+
+    <img src="#" alt="image.jpg" />
+
+    <p id="count">0</p>
+    <button id="btn">Click</button>
+    <br />
+    <br />
+
+    <div class="cards">
+      <div class="product-card">
+        <img
+          src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=300"
+          alt="watch"
+        />
+        <h3 class="category-name">Electronics</h3>
+        <h1 class="product-name">Smart Watch</h1>
+        <div class="product-footer">
+         <p class="product-price">$ <span class="price">22.99</span></p>
+          <button class="wishlist-btn-card">❤️</button>
+        </div>
+        <button class="add-to-cart-btn">Add to Cart</button>
+      </div>
+
+      <div class="product-card">
+        <img
+          src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=300"
+          alt="headphone"
+        />
+        <h3 class="category-name">Audio</h3>
+        <h1 class="product-name">Wireless Headphones</h1>
+        <div class="product-footer">
+          <p class="product-price">$ <span class="price">89.99</span></p>
+          <button class="wishlist-btn-card">❤️</button>
+        </div>
+        <button class="add-to-cart-btn">Add to Cart</button>
+      </div>
+    </div>
+    <br />
+    <p id="wish-count">0</p>
+    <div id="cartItems"></div>
+    <div>
+      <p id="cartCount">0</p>
+      <p id="totalPrice">0</p>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
